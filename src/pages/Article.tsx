@@ -59,7 +59,7 @@ const Article: React.FC = () => {
         <div className="min-h-screen bg-wispr-cream selection:bg-wispr-purple selection:text-white flex flex-col">
             <Navbar onBookDemo={openBookModal} />
 
-            <main className="flex-grow pt-28">
+            <main className="flex-grow pt-20">
                 {selectedPost ? (
                     <BlogPostComponent
                         post={selectedPost}

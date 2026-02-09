@@ -82,7 +82,7 @@ const BlogPostComponent: React.FC<BlogPostProps> = ({ post, onBack, onBackToList
   return (
     <div className="min-h-screen bg-wispr-cream">
       {/* Hero Section */}
-      <section className="relative w-full pt-40 pb-20 px-6 overflow-hidden">
+      <section className="relative w-full pt-12 pb-10 px-6 overflow-hidden">
         {/* Background Glow */}
         <div className="absolute top-[-10%] right-1/4 w-[60vw] h-[60vw] bg-wispr-purple/10 blur-[200px] rounded-full pointer-events-none"></div>
 
@@ -90,14 +90,14 @@ const BlogPostComponent: React.FC<BlogPostProps> = ({ post, onBack, onBackToList
           {/* Back Button */}
           <button
             onClick={onBackToList}
-            className="mb-12 inline-flex items-center gap-3 px-6 py-3 rounded-2xl border border-wispr-dark/10 font-brand text-[11px] font-black uppercase tracking-[0.2em] text-wispr-dark/60 hover:bg-wispr-dark hover:text-white transition-all active:scale-95"
+            className="mb-8 inline-flex items-center gap-3 px-6 py-3 rounded-2xl border border-wispr-dark/10 font-brand text-[11px] font-black uppercase tracking-[0.2em] text-wispr-dark/60 hover:bg-wispr-dark hover:text-white transition-all active:scale-95"
           >
             <ArrowLeft size={16} />
             Back to Blog
           </button>
 
           {/* Category Badge */}
-          <div className="reveal-advanced active mb-10">
+          <div className="reveal-advanced active mb-6">
             <span className="inline-flex items-center gap-3 px-6 py-3 bg-wispr-dark text-wispr-cream rounded-full font-brand text-[10px] font-black tracking-[0.4em] uppercase shadow-lg">
               <Sparkles size={14} className="text-wispr-purple" />
               {post.category}
@@ -105,7 +105,7 @@ const BlogPostComponent: React.FC<BlogPostProps> = ({ post, onBack, onBackToList
           </div>
 
           {/* Title */}
-          <div className="reveal-advanced active mb-12" style={{ transitionDelay: '100ms' }}>
+          <div className="reveal-advanced active mb-8" style={{ transitionDelay: '100ms' }}>
             <h1 className="font-lander text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tighter text-wispr-dark">
               {post.title}
             </h1>
@@ -147,7 +147,7 @@ const BlogPostComponent: React.FC<BlogPostProps> = ({ post, onBack, onBackToList
       </section>
 
       {/* Section Breaker */}
-      <div className="w-full py-6 flex items-center justify-center overflow-hidden relative bg-wispr-cream">
+      <div className="w-full py-4 flex items-center justify-center overflow-hidden relative bg-wispr-cream">
         <div className="flex items-center gap-12 w-full max-w-4xl px-6 opacity-20">
           <div className="flex-1 h-[1px] bg-wispr-dark"></div>
           <div className="flex items-center gap-2 shrink-0">
@@ -159,7 +159,7 @@ const BlogPostComponent: React.FC<BlogPostProps> = ({ post, onBack, onBackToList
       </div>
 
       {/* Article Content */}
-      <article className="py-16 md:py-24 px-6 bg-wispr-cream">
+      <article className="py-8 md:py-16 px-6 bg-wispr-cream">
         <div className="max-w-4xl mx-auto">
           {/* Tags */}
           <div className="flex flex-wrap gap-3 mb-12">

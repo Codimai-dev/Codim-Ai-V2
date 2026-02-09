@@ -13,7 +13,7 @@ const BlogList: React.FC<BlogListProps> = ({ posts, onReadMore, onBack }) => {
   return (
     <div className="min-h-screen bg-wispr-cream">
       {/* Hero Section */}
-      <section className="relative w-full pt-40 pb-24 px-6 overflow-hidden">
+      <section className="relative w-full pt-12 pb-12 px-6 overflow-hidden">
         {/* Background Glow */}
         <div className="absolute top-[-10%] left-1/4 w-[70vw] h-[70vw] bg-wispr-purple/10 blur-[200px] rounded-full pointer-events-none"></div>
 
@@ -21,14 +21,14 @@ const BlogList: React.FC<BlogListProps> = ({ posts, onReadMore, onBack }) => {
           {/* Back Button */}
           <button
             onClick={onBack}
-            className="mb-12 inline-flex items-center gap-3 px-6 py-3 rounded-2xl border border-wispr-dark/10 font-brand text-[11px] font-black uppercase tracking-[0.2em] text-wispr-dark/60 hover:bg-wispr-dark hover:text-white transition-all active:scale-95"
+            className="mb-6 inline-flex items-center gap-3 px-6 py-3 rounded-2xl border border-wispr-dark/10 font-brand text-[11px] font-black uppercase tracking-[0.2em] text-wispr-dark/60 hover:bg-wispr-dark hover:text-white transition-all active:scale-95"
           >
             <ArrowLeft size={16} />
             Back to Home
           </button>
 
           {/* Badge */}
-          <div className="reveal-advanced active mb-12">
+          <div className="reveal-advanced active mb-6">
             <div className="inline-flex items-center gap-3 px-8 py-3 bg-wispr-dark text-wispr-cream rounded-full font-brand text-[10px] font-black tracking-[0.4em] uppercase shadow-[0_30px_60px_rgba(0,0,0,0.3)] border border-white/5">
               <Sparkles size={16} className="text-wispr-purple" />
               <span>Insights & Resources</span>
@@ -36,7 +36,7 @@ const BlogList: React.FC<BlogListProps> = ({ posts, onReadMore, onBack }) => {
           </div>
 
           {/* Main Title */}
-          <div className="reveal-advanced active mb-10">
+          <div className="reveal-advanced active mb-6">
             <h1 className="font-lander text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] font-bold leading-[0.85] tracking-tighter text-wispr-dark">
               The Blog.
             </h1>
@@ -53,7 +53,7 @@ const BlogList: React.FC<BlogListProps> = ({ posts, onReadMore, onBack }) => {
       </section>
 
       {/* Section Breaker */}
-      <div className="w-full py-6 flex items-center justify-center overflow-hidden relative bg-wispr-cream">
+      <div className="w-full py-4 flex items-center justify-center overflow-hidden relative bg-wispr-cream">
         <div className="flex items-center gap-12 w-full max-w-7xl px-6 opacity-20">
           <div className="flex-1 h-[1px] bg-wispr-dark"></div>
           <div className="flex items-center gap-2 shrink-0">
@@ -65,7 +65,7 @@ const BlogList: React.FC<BlogListProps> = ({ posts, onReadMore, onBack }) => {
       </div>
 
       {/* Blog Grid */}
-      <section className="py-24 md:py-32 px-6 bg-wispr-cream">
+      <section className="py-12 md:py-20 px-6 bg-wispr-cream">
         <div className="max-w-7xl mx-auto">
           {/* Stats Bar */}
           <div className="flex items-center justify-between mb-16 pb-8 border-b border-wispr-dark/10">
